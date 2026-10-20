@@ -1,0 +1,30 @@
+{
+  "name": "vue-g1000",
+  "version": "0.1.0",
+  "description": "Vue 3 component rendering a simplified Garmin G1000 PFD (and optional MFD engine section) using vue-konva",
+  "type": "module",
+  "main": "./dist/vue-g1000.umd.cjs",
+  "module": "./dist/vue-g1000.js",
+  "exports": {
+    ".": { "import": "./dist/vue-g1000.js", "require": "./dist/vue-g1000.umd.cjs" }
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "konva": "^9.0.0",
+    "vue": "^3.3.0",
+    "vue-konva": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "konva": "^9.3.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.0",
+    "vue": "^3.4.0",
+    "vue-konva": "^3.0.2"
+  },
+  "license": "GPL-3.0"
+}
